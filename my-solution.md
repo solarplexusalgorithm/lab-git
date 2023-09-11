@@ -11,7 +11,9 @@ Create a new directory called `git-lab/`. Then, navigate inside of that director
 Copy and paste _the command(s)_ you used into the code block below.
 
 ```
-
+➜  Downloads cd ~
+➜  ~ mkdir git-lab
+➜  ~ lsgit
 ```
 
 ## 2
@@ -21,7 +23,14 @@ Initialize the directory as a git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
-
+➜  ~ git-init
+zsh: command not found: git-init
+➜  ~ cd git-lab
+➜  git-lab git-init
+zsh: command not found: git-init
+➜  git-lab git init
+Initialized empty Git repository in /Users/fellowjaninesmith/git-lab/.git/
+➜  git-lab git:(main) 
 ```
 
 ## 3
@@ -31,7 +40,12 @@ Check the current status of the git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
+➜  git-lab git:(main) git status
+On branch main
 
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
 ```
 
 ## 4
@@ -41,7 +55,12 @@ Create a new file called `readme.md`. Then stage that file.
 Copy and paste _the command(s)_ you used into the code block below.
 
 ```
-
+➜  git-lab git:(main) git add readme.md
+➜  git-lab git:(main) cd git-lab
+cd: no such file or directory: git-lab
+➜  git-lab git:(main) ls
+readme.md
+➜  git-lab git:(main)
 ```
 
 ## 5
@@ -51,7 +70,12 @@ Check the current status of the git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
+➜  git-lab git:(main) git status
+On branch main
 
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
 ```
 
 ## 6
@@ -59,8 +83,7 @@ Copy and paste the _output_ of the command(s) you ran into the code block below.
 Add the following text to your `readme.md` file.
 
 ```
-I am learning to use git.
-```
+git add```
 
 Then, check the current status of the git repository.
 
